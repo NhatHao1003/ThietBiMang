@@ -20,8 +20,7 @@
             <nav class="nav-1 navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <!-- logo -->
-                    <a href="#"><img id="logo" src="./IMG/logo.png" alt="Logo"></a>
-
+                    <a href="#"><img class="d-block img-fluid" id="logo" src="./IMG/logo.png" alt="Logo"></a>
                         <!-- Nút collapse -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,9 +103,40 @@
     </header>
     <!-- Content -->
     <div class="container-fluid section1 px-5">
-        <div class="why-choose-us container py-5">
+        <!-- Các loại thiết bị mạng -->
+         <div class="container mt-3">
+            <h1 style="text-align: center;padding: 30px; color: #1284c2;">Các loại thiết bị mạng cơ bản</h1>
+            <div class="row row-cols-2 row-cols-md-4 g-4 mt-4">
+                <div class="col">
+                    <div class="tbm-item">
+                        <img src="./IMG/acesspoints.png" alt="#">
+                        <p>Access Point</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tbm-item">
+                        <img src="./IMG/modem.png" alt="#">
+                        <p>Modem</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tbm-item">
+                        <img src="./IMG/switch.png" alt="#">
+                        <p>Switch</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tbm-item">
+                        <img src="./IMG/router.jpg" alt="#">
+                        <p>Router</p>
+                    </div>
+                </div>
+             </div>
+         </div>
+    
+        <!-- Tại sao chọn chúng tôi -->
+        <div class="container mt-5 py-5">
             <div class="row align-items-center">
-              <!-- Cột Trái: Nội dung -->
               <div class="col-md-6 mb-4 mb-md-0">
                 <h2 class="section-title mb-4">Tại sao chọn chúng tôi?</h2>
                 <ul class="list-unstyled">
@@ -129,22 +159,49 @@
                 </ul>
               </div>
           
-              <!-- Cột Phải: Hình ảnh -->
               <div class="col-md-6 text-center">
                 <img src="./IMG/visao.jpeg" alt="Tại sao chọn chúng tôi" class="img-fluid rounded-4 shadow">
               </div>
             </div>
           </div>
-          
+        <!-- Cam kết sp -->
+          <!-- Cam kết chất lượng sản phẩm -->
+        <div class="container my-5 py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="./IMG/camket.png" alt="Cam kết chất lượng" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="section-title mb-4" style="color: #1284c2;">Cam Kết Chất Lượng Sản Phẩm</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="bi bi-award-fill text-primary me-2"></i>
+                            <strong>Chính hãng 100%:</strong> Các sản phẩm đều có tem bảo hành và nguồn gốc rõ ràng.
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-shield-lock-fill text-primary me-2"></i>
+                            <strong>Đảm bảo an toàn:</strong> Thiết bị được kiểm định kỹ lưỡng trước khi giao tới khách hàng.
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-lightning-fill text-primary me-2"></i>
+                            <strong>Vận hành ổn định:</strong> Cam kết sản phẩm hoạt động bền bỉ và đúng hiệu suất cam kết.
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-clipboard-check-fill text-primary me-2"></i>
+                            <strong>Hậu mãi tận tình:</strong> Bảo hành chính hãng, hỗ trợ đổi trả linh hoạt.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
 
-        <div class="row title">
+        <div class="row title mt-3">
             <h3>Sản phẩm nổi bật <img id="hot" src="./IMG/hot.gif" alt="hot"></h3>           
         </div>
-        <!-- Nội dung -->
          
         <!-- Sản phẩm nổi bật -->
-        <div class="row row-cols-2 row-cols-md-4 g-4 mt-4">
+        <div class="row row-cols-2 row-cols-md-4 g-4 mt-5">
             <div class="col">
                 <div class="card">
                     <a href="#"><img src="./IMG/SanPham/ArcherC54.png" class="card-img-top" alt="..."></a>
@@ -200,7 +257,7 @@
                 <div class="card">
                     <a href="#"><img src="./IMG/SanPham/AC1200.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                        <p class="card-text">Router Wifi TP-Link Archer C54 băng tần kép AC1200</p>
+                        <p class="">Router Wifi TP-Link Archer C54 băng tần kép AC1200</p>
                         <div class="d-flex justify-content-between text-secondary ">
                             <p>4.5 <i class="fa-solid fa-star"></i></p>
                             <p>Lượt bán: 1k</p>
@@ -213,6 +270,7 @@
                     </div>
                 </div>
             </div>
+            <button type="button" class="btn btn-success w-100">Xem thêm</button>
         </div>
         <!-- form giải đáp thắc mắc -->
         <div class="row title">
@@ -227,36 +285,48 @@
         </div>
 
     </div>
-    <footer>
-        <div class="row ft text-center text-md-start">
-            <div class="col ft-title">
-                <h3>Địa chỉ cửa hàng</h3>
-                <p>12 Nguyễn Văn Bảo, Phường 1, Gò Vấp, TP.HCM</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8582379826526!2d106.6842704740542!3d10.822158889329415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174deb3ef536f31%3A0x8b7bb8b7c956157b!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUUC5IQ00!5e0!3m2!1svi!2s!4v1745056421407!5m2!1svi!2s"
-                    width="80%" 
-                    height="90%" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-
+    <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="container">
+          <div class="row text-center text-md-start">
+            <!-- Cột 1 -->
+            <div class="col-12 col-md-4 mb-4">
+              <h5 class="text-uppercase mb-4 fw-bold">Liên hệ chúng tôi</h5>
+              <p><i class="bi bi-geo-alt-fill me-2"></i>12 Nguyễn Văn Bảo, Gò Vấp, TP.HCM</p>
+              <p><i class="bi bi-telephone-fill me-2"></i>0101 010 101</p>
+              <p><i class="bi bi-envelope-fill me-2"></i>info@thietbimang.vn</p>
             </div>
-
-            <div class="col ft-title">
-                <h3>Thông tin liên hệ:</h3>
-                <p>Hotline 1: 0101010101</p>
-                <p>Hotline 2 :0202020202</p>
-                <p><a href="#">SiteMap</a></p>
-                <p><a href="#">Thành Viên Nhóm</a></p>
+      
+            <!-- Cột 2 -->
+            <div class="col-12 col-md-4 mb-4">
+              <h5 class="text-uppercase mb-4 fw-bold">Hỗ trợ khách hàng</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none text-light d-block mb-2">Chính sách bảo hành</a></li>
+                <li><a href="#" class="text-decoration-none text-light d-block mb-2">Hướng dẫn mua hàng</a></li>
+                <li><a href="#" class="text-decoration-none text-light d-block mb-2">Kiểm tra đơn hàng</a></li>
+                <li><a href="#" class="text-decoration-none text-light d-block mb-2">Liên hệ tư vấn</a></li>
+              </ul>
             </div>
-
-            <div class="col ft-title">
-                <h3>Địa chỉ cửa hàng</h3>
-            </div>      
+      
+            <!-- Cột 3 -->
+            <div class="col-12 col-md-4 mb-4">
+              <h5 class="text-uppercase mb-4 fw-bold">Cam kết của chúng tôi</h5>
+              <p><i class="bi bi-patch-check-fill me-2"></i>Chính hãng 100%</p>
+              <p><i class="bi bi-truck me-2"></i>Giao hàng nhanh chóng</p>
+              <p><i class="bi bi-shield-lock-fill me-2"></i>Thanh toán bảo mật</p>
+              <p><i class="bi bi-emoji-smile-fill me-2"></i>Hỗ trợ kỹ thuật 24/7</p>
+            </div>
+          </div>
+      
+          <hr class="mb-4">
+      
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="mb-0 small">&copy; 2025 Thiết Bị Mạng | Thiết kế bởi Đội Ngũ Phát Triển Nguyễn Phương Nhật Hào - Phạm Văn Chung</p>
+            </div>
+          </div>
         </div>
-        
-    </footer>
+      </footer>
+      
     
       
 </body>
