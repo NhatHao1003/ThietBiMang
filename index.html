@@ -20,7 +20,14 @@
             <nav class="nav-1 navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <!-- logo -->
-                    <a href="#"><img id="logo" class="navbar-brand" src="./IMG/logo.png" alt="Logo"></a>
+                    <a href="#"><img id="logo" src="./IMG/logo.png" alt="Logo"></a>
+
+                        <!-- Nút collapse -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
                     <!-- tìm kiếm -->
                     <form action="">
                         <div class="search-box">
@@ -31,7 +38,7 @@
                         </div>
                     </form>
                     <!-- menu -->
-                    <div class="collapse navbar-collapse order-lg-1 justify-content-center menu" >
+                    <div class="collapse navbar-collapse order-lg-1 justify-content-center menu" id="navbarNav" >
                         <ul class="nav navbar menu-left" >
                             <li class="nav-item"><a href="#" class="nav-link active">Trang chủ</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Sản Phẩm</a></li>
@@ -65,40 +72,77 @@
         </div>
         
     <!-- Slide -->
-        <div id="carouselExampleControls" class="carousel slide px-4" data-bs-ride="carousel" data-bs-interval="2000">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./IMG/slide1.jpg" class="d-block mx-auto  img-hder slide" alt="...">
+        <div class="slide">
+            <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./IMG/slide1.jpg" class="d-block mx-auto slide-img">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./IMG/slide2.jpg" class="d-block mx-auto slide-img">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./IMG/slide3.jpg" class="d-block mx-auto slide-img">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./IMG/slide4.jpg" class="d-block mx-auto slide-img">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./IMG/slide5.jpg" class="d-block mx-auto slide-img">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <div class="carousel-item">
-                <img src="./IMG/slide2.jpg" class="d-block mx-auto  img-hder slide" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./IMG/slide3.jpg" class="d-block mx-auto img-hder slide" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./IMG/slide4.jpg" class="d-block mx-auto img-hder slide" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./IMG/slide5.jpg" class="d-block mx-auto img-hder slide" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        </div>
     </header>
     <!-- Content -->
-    <div class="section1">
+    <div class="container-fluid section1 px-5">
+        <div class="why-choose-us container py-5">
+            <div class="row align-items-center">
+              <!-- Cột Trái: Nội dung -->
+              <div class="col-md-6 mb-4 mb-md-0">
+                <h2 class="section-title mb-4">Tại sao chọn chúng tôi?</h2>
+                <ul class="list-unstyled">
+                  <li class="mb-3">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    <strong>Đa dạng sản phẩm:</strong> Router, Switch, Access Point, Modem, Thiết bị Mesh Wifi...
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    <strong>Giá cả cạnh tranh:</strong> Cam kết giá tốt nhất trên thị trường.
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    <strong>Dịch vụ tận tâm:</strong> Tư vấn miễn phí, hỗ trợ kỹ thuật 24/7.
+                  </li>
+                  <li class="mb-3">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                    <strong>Bảo hành nhanh chóng:</strong> 1 đổi 1 trong 7 ngày đầu nếu lỗi do nhà sản xuất.
+                  </li>
+                </ul>
+              </div>
+          
+              <!-- Cột Phải: Hình ảnh -->
+              <div class="col-md-6 text-center">
+                <img src="./IMG/visao.jpeg" alt="Tại sao chọn chúng tôi" class="img-fluid rounded-4 shadow">
+              </div>
+            </div>
+          </div>
+          
+
+
         <div class="row title">
             <h3>Sản phẩm nổi bật <img id="hot" src="./IMG/hot.gif" alt="hot"></h3>           
         </div>
-
+        <!-- Nội dung -->
+         
         <!-- Sản phẩm nổi bật -->
         <div class="row row-cols-2 row-cols-md-4 g-4 mt-4">
             <div class="col">
@@ -107,16 +151,12 @@
                     <div class="card-body">
                         <p class="card-text">Router Wifi TP-Link Archer C54 băng tần kép AC1200</p>
                         <div class="d-flex justify-content-between text-secondary ">
-                            <p>4.8 <i class="fa-solid fa-star"></i></p>
+                            <p>4.5 <i class="fa-solid fa-star"></i></p>
                             <p>Lượt bán: 1.2k</p>
                         </div>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col">
                                 <p class="price">280.000đ</p>
-                            </div>
-                            <div class="col-2"></div>
-                            <div class="col-4" id="icon-shopping">
-                                <button type="submit"><i class="fa-solid fa-cart-shopping"></i></button>
                             </div>
                         </div>
                     </div>
@@ -124,20 +164,16 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <a href="#"><img src="./IMG/SanPham/ArcherC54.png" class="card-img-top" alt="..."></a>
+                    <a href="#"><img src="./IMG/SanPham/Totolink_x2000G.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                        <p class="card-text">Router Wifi TP-Link Archer C54 băng tần kép AC1200</p>
+                        <p class="card-text">Router WiFi 6 Totolink X2000R V2 Gigabit băng tần kép AX1500</p>
                         <div class="d-flex justify-content-between text-secondary ">
-                            <p>4.8 <i class="fa-solid fa-star"></i></p>
-                            <p>Lượt bán: 1.2k</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i></p>
+                            <p>Lượt bán: 1.8k</p>
                         </div>
                         <div class="row">
-                            <div class="col-6">
-                                <p class="price">280.000đ</p>
-                            </div>
-                            <div class="col-2"></div>
-                            <div class="col-4" id="icon-shopping">
-                                <button type="submit"><i class="fa-solid fa-cart-shopping"></i></button>
+                            <div class="col">
+                                <p class="price">729.000đ</p>
                             </div>
                         </div>
                     </div>
@@ -145,20 +181,16 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <a href="./html/info_fooddog.html"><img src="./IMG/SanPham/ArcherC54.png" class="card-img-top" alt="..."></a>
+                    <a href="#"><img src="./IMG/SanPham/TL.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                        <p class="card-text">Router Wifi TP-Link Archer C54 băng tần kép AC1200</p>
+                        <p class="card-text">Thiết bị mạng Switch TP-Link PoE TL-SL1218MP 16 cổng 10/100Mbps</p>
                         <div class="d-flex justify-content-between text-secondary ">
-                            <p>4.8 <i class="fa-solid fa-star"></i></p>
-                            <p>Lượt bán: 1.2k</p>
+                            <p>4.9 <i class="fa-solid fa-star"></i></p>
+                            <p>Lượt bán: 1.4k</p>
                         </div>
                         <div class="row">
-                            <div class="col-6">
-                                <p class="price">280.000đ</p>
-                            </div>
-                            <div class="col-2"></div>
-                            <div class="col-4" id="icon-shopping">
-                                <button type="submit"><i class="fa-solid fa-cart-shopping"></i></button>
+                            <div class="col">
+                                <p class="price">4.090.000đ</p>
                             </div>
                         </div>
                     </div>
@@ -166,20 +198,16 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <a href="#"><img src="./IMG/SanPham/ArcherC54.png" class="card-img-top" alt="..."></a>
+                    <a href="#"><img src="./IMG/SanPham/AC1200.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <p class="card-text">Router Wifi TP-Link Archer C54 băng tần kép AC1200</p>
                         <div class="d-flex justify-content-between text-secondary ">
-                            <p>4.8 <i class="fa-solid fa-star"></i></p>
-                            <p>Lượt bán: 1.2k</p>
+                            <p>4.5 <i class="fa-solid fa-star"></i></p>
+                            <p>Lượt bán: 1k</p>
                         </div>
                         <div class="row">
-                            <div class="col-6">
-                                <p class="price">280.000đ</p>
-                            </div>
-                            <div class="col-2"></div>
-                            <div class="col-4" id="icon-shopping">
-                                <button type="submit"><i class="fa-solid fa-cart-shopping"></i></button>
+                            <div class="col">
+                                <p class="price">469.000đ</p>
                             </div>
                         </div>
                     </div>
@@ -200,7 +228,7 @@
 
     </div>
     <footer>
-        <div class="row ft">
+        <div class="row ft text-center text-md-start">
             <div class="col ft-title">
                 <h3>Địa chỉ cửa hàng</h3>
                 <p>12 Nguyễn Văn Bảo, Phường 1, Gò Vấp, TP.HCM</p>
