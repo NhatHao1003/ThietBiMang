@@ -30,9 +30,8 @@ header{
         display: none !important;
     }
 }
-.active{
-    color: #1284c2 !important;
-}
+
+
 .menu ul li a{
     color: white;
     font-weight: bolder;
@@ -64,78 +63,31 @@ nav .nav-link:hover{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
-.slide{
-    width: 100%;
-    height: 600px;
+.active{
+    color: #1284c2 !important;
 }
-.slide-img{
-    height: 600px;
-    width: 100%;
-}
-/* Phần content */
-.section1{
-    width: 100%;  
-    padding: 20px 100px;
-}
-.tbm-item{
-    border: 1px solid black;
-    background-color: #1284c2;
-    width: 100%;
-    min-height: 0px;
+.cart-table img {
+    width: 80px;
+  }
+.quantity-input {
+    width: 60px;
     text-align: center;
-    border-radius: 20px;
-}
-.tbm-item:hover{
-    background-color: #71b2d2;
-}
-.tbm-item img:hover{
-    padding-bottom: 20px;
-}
-.tbm-item img{
-    width: 90%;
-    height: 250px;
-}
-.title{
-    padding: 10px;
-    border-bottom: 1px solid black;
-    color: #353535;
-}
-#hot{
-    width: 50px;
-}
-.price{
-    font-size: 14px;
+  }
+.btn-remove {
+    
     color: red;
-    font-weight: bold;
-    text-align: right;
-}
-.icon-shopping button {
-    color: red;
-}
-.card img{
-    height: 300px;
-}
-.card-body{
-    border-top: 1px solid black;
-    height: 250px;
+    cursor: pointer;
+  }
+/*phần content*/
+.modal-dialog {
+    max-width: 500px; /* Modal rộng hơn 1 chút */
 }
 
-.card:hover {
-    transform: scale(1.05); 
-    transition: transform 0.3s ease-in-out; 
-    border: 5px solid #353535;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    font-weight: 500;
-} 
-#bttGui{
-    background-color: #353535;
-    color: white;
-    width: 100px;
-    height: 35px;
-    border-radius: 10px;
+.modal-body {
+    max-height: 50vh; /* Chiều cao tối đa: 70% chiều cao màn hình */
+    overflow-y: auto; /* Khi nội dung dài -> tự động cuộn */
 }
-/* Phần footer */
-footer{
+  footer{
     width: 100%;
     background-color: #353535;
     height: 500px;

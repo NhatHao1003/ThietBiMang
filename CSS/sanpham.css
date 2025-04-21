@@ -63,6 +63,9 @@ nav .nav-link:hover{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
+.active{
+    color: #1284c2 !important;
+}
 /* sản phẩm */
 .category-card {
     border: 1px solid #dee2e6;
@@ -86,7 +89,13 @@ nav .nav-link:hover{
 .category-card:hover i {
     color: #fff;
 }
-
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background: #fff; 
+    padding: 20px; 
+}
 .category-card h6 {
     font-weight: 600;
     margin: 0;
@@ -128,3 +137,11 @@ footer{
   .product-item .btn-primary {
     width: 100%;
   }
+
+
+.product-image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
