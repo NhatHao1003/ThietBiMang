@@ -1,0 +1,130 @@
+/* Phần header */
+body{
+
+    font-family: Arial;
+}
+.bg{
+    background-color: #dcd3d3;
+}
+header{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.nav-fixed{
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+.nav-1{
+    height: 80px;
+    background-color: #353535;
+}
+.nav-2{
+    height: 30px;
+    background-color: #dcd3d3;
+    border-bottom: 2px solid #353535;
+}
+@media (max-width: 768px) {
+    .nav-2 {
+        display: none !important;
+    }
+}
+
+
+.menu ul li a{
+    color: white;
+    font-weight: bolder;
+}
+nav .nav-link:hover{
+    color: #1284c2;
+}
+#logo{
+    width: 100px;
+    height: 50px;
+}
+.search-box {
+    display: flex;
+    width: 20%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  } 
+.search-input {
+    border: none;
+    flex: 1;
+    padding: 7px 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+.search-button {
+    background-color: rgb(207, 201, 201);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 0 1rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+/* sản phẩm */
+.category-card {
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.category-card:hover {
+    background-color: #0d6efd;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.category-card i {
+    color: #0d6efd;
+    transition: color 0.3s;
+}
+
+.category-card:hover i {
+    color: #fff;
+}
+
+.category-card h6 {
+    font-weight: 600;
+    margin: 0;
+}
+footer{
+    width: 100%;
+    background-color: #353535;
+    height: 500px;
+}
+.ft-title{
+    text-align: center;
+    color: white;
+}
+.ft-title h3{
+    padding: 20px 20px;
+    border-bottom: 1px solid white;
+}
+.ft-title p a{
+    text-decoration: none;
+    color: white;
+}
+
+/* modal */
+.modal{
+    margin-top: 100px;
+}
+.modal-body {
+    padding: 20px;
+  }
+
+  .modal-title {
+    font-weight: bold;
+  }
+
+  .btn-close {
+    color: #000;
+  }
+
+  .product-item .btn-primary {
+    width: 100%;
+  }
