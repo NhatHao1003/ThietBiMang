@@ -79,11 +79,12 @@ nav .nav-link:hover{
 }
 .tbm-item{
     border: 1px solid black;
-    background-color: #1284c2;
+    background-color: #353535;
     width: 100%;
     min-height: 0px;
     text-align: center;
     border-radius: 20px;
+    color: white;
 }
 .tbm-item:hover{
     background-color: #71b2d2;
@@ -133,6 +134,9 @@ nav .nav-link:hover{
     width: 100px;
     height: 35px;
     border-radius: 10px;
+}
+.nextSP {
+    margin-top: 50px;
 }
 /* Phần footer */
 footer{
