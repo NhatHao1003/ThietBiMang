@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Thiết bị mạng uy tín</title>
+   
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/firewall.css">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/jquery-3.7.1.js"></script>
+    <script src="../JS/giohang.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="bg">
+    <!-- Phần header -->
+    <div class="waper container-fluid">
+        <header>
+            <div class="nav-fixed">
+                <nav class="nav-1 navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <!-- logo -->
+                        <a href="../index.html">
+                            <img class="d-block img-fluid" id="logo" src="../IMG/logo.png" alt="Logo">
+                        </a>
+                        <!-- Nút collapse -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <!-- tìm kiếm -->
+                        <form action="">
+                            <div class="search-box">
+                                <input type="text" class="search-input" placeholder="Tìm kiếm...">
+                                <button class="search-button">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- menu -->
+                        <div class="collapse navbar-collapse order-lg-1 justify-content-center menu" id="navbarNav">
+                            <ul class="nav navbar menu-left">
+                                <li class="nav-item"><a href="../index.html" class="nav-link">Trang chủ</a></li>
+                                <li class="nav-item"><a href="./sanpham.html" class="nav-link">Sản Phẩm</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Giới Thiệu</a></li>                       
+                            </ul>   
+                        </div>
+
+                        <div class="collapse navbar-collapse order-lg-1 justify-content-end menu">
+                            <ul class="nav navbar menu-right">
+                                <li class="nav-item">
+                                    <a href="./giohang.html" class="nav-link">
+                                        <i class="bi bi-cart3"></i> Giỏ Hàng
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="bi bi-person-circle"></i> Log In
+                                    </a>
+                                </li>                
+                            </ul>  
+                        </div>
+                    </div>
+                </nav>
+
+                <nav class="navbar navbar-expand-lg nav-2">
+                    <div class="container-fluid justify-content-end">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a href="#" class="nav-link">Kiểm tra bảo hành</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Hướng dẫn mua hàng</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>       
+        </header>
+    
+        <div class="container-fluid container">
+            <section class="py-5">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="fw-bold">Switch Mạng - Trung Tâm Kết Nối Mạnh Mẽ</h2>
+                        <p class="text-muted">Thiết bị không thể thiếu trong hệ thống mạng doanh nghiệp và gia đình</p>
+                    </div>
+                </div>
+            
+                <!-- Giới thiệu Switch -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <img src="../IMG/switch1.png" alt="Giới thiệu Switch mạng" class="img-fluid rounded-3 shadow">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="fw-bold">Switch mạng là gì?</h3>
+                        <p><strong>Switch</strong> (thiết bị chuyển mạch) là thành phần quan trọng trong mạng LAN, có chức năng kết nối nhiều thiết bị với nhau và quản lý lưu lượng mạng hiệu quả.</p>
+                        <ul>
+                            <li>Kết nối các thiết bị trong cùng mạng nội bộ (LAN)</li>
+                            <li>Phân phối dữ liệu thông minh đến đúng thiết bị đích</li>
+                            <li>Giảm xung đột và tắc nghẽn mạng</li>
+                            <li>Hỗ trợ tốc độ truyền dữ liệu cao (1Gbps, 10Gbps,...)</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Vai trò Switch -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 order-md-2">
+                        <img src="../IMG/switch2.jpg" alt="Vai trò của Switch" class="img-fluid rounded-3 shadow">
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <h3 class="fw-bold">Vai trò quan trọng của Switch</h3>
+                        <p>Switch đóng nhiều vai trò thiết yếu trong hệ thống mạng:</p>
+                        <ul>
+                            <li><strong>Kết nối đa điểm:</strong> Mở rộng số lượng cổng kết nối cho router</li>
+                            <li><strong>Phân đoạn mạng:</strong> Chia mạng lớn thành các segment nhỏ hơn</li>
+                            <li><strong>Tối ưu băng thông:</strong> Giảm thiểu xung đột mạng bằng kỹ thuật chuyển mạch</li>
+                            <li><strong>Quản lý VLAN:</strong> Phân chia mạng ảo cho các phòng ban/ứng dụng khác nhau</li>
+                            <li><strong>Kiểm soát lưu lượng:</strong> QoS ưu tiên băng thông cho ứng dụng quan trọng</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Các loại Switch -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <img src="../IMG/switch3.png" alt="Các loại Switch" class="img-fluid rounded-3 shadow">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="fw-bold">Các loại Switch phổ biến</h3>
+                        <p>Tùy theo nhu cầu sử dụng, có các loại switch chính sau:</p>
+                        <ul>
+                            <li><strong>Unmanaged Switch:</strong> Plug-and-play, không cần cấu hình, phù hợp gia đình, văn phòng nhỏ</li>
+                            <li><strong>Managed Switch:</strong> Có thể cấu hình nâng cao, quản lý VLAN, QoS,... cho doanh nghiệp</li>
+                            <li><strong>Smart Switch:</strong> Cân bằng giữa unmanaged và managed, có web interface đơn giản</li>
+                            <li><strong>PoE Switch:</strong> Cung cấp nguồn qua cáp mạng (Power over Ethernet) cho camera IP, điện thoại VoIP</li>
+                            <li><strong>Switch Layer 3:</strong> Có khả năng định tuyến cơ bản giữa các VLAN</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Lợi ích khi sử dụng Switch -->
+                <div class="row text-center mb-5">
+                    <div class="col-12">
+                        <h3 class="fw-bold mb-4">Lợi ích khi sử dụng Switch mạng</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-4 border rounded-3 shadow-sm h-100">
+                            <i class="bi bi-diagram-3 display-4 text-primary"></i>
+                            <h5 class="mt-3">Mở rộng kết nối</h5>
+                            <p>Tăng số lượng cổng kết nối từ router chính, kết nối nhiều thiết bị cùng lúc</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-4 border rounded-3 shadow-sm h-100">
+                            <i class="bi bi-lightning-charge display-4 text-success"></i>
+                            <h5 class="mt-3">Tốc độ cao</h5>
+                            <p>Truyền dữ liệu nội bộ với tốc độ Gigabit, giảm độ trễ</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-4 border rounded-3 shadow-sm h-100">
+                            <i class="bi bi-shuffle display-4 text-warning"></i>
+                            <h5 class="mt-3">Thông minh</h5>
+                            <p>Tự động học địa chỉ MAC và chuyển tiếp frame đến đúng cổng đích</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="p-4 border rounded-3 shadow-sm h-100">
+                            <i class="bi bi-shield-lock display-4 text-info"></i>
+                            <h5 class="mt-3">Bảo mật</h5>
+                            <p>Quản lý truy cập, cách ly lưu lượng giữa các cổng (Port Security)</p>
+                        </div>
+                    </div>
+                </div>          
+                <!-- CTA -->
+                <div class="row text-center">
+                    <div class="col-12">
+                        <a href="./sanpham.html" class="btn btn-primary btn-lg px-5 py-3">
+                            <i class="bi bi-router me-2"></i>Khám phá các dòng Switch tại TechStore
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Video -->
+            <section class="py-5 bg-light">
+                <div class="container">
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-12 text-center">
+                            <h2 class="fw-bold">Video: Switch mạng hoạt động như thế nào?</h2>
+                            <p class="text-muted">Cùng tìm hiểu nguyên lý hoạt động và cách lựa chọn switch phù hợp với nhu cầu</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="ratio ratio-16x9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/lOnQIIEyzPE?si=c3gsMWnSLlORO3lh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                 referrerpolicy="strict-origin-when-cross-origin"
+                                  allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>           
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-light pt-5 pb-4">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="text-uppercase mb-4 fw-bold">Liên hệ chúng tôi</h5>
+                        <p><i class="bi bi-geo-alt-fill me-2"></i>12 Nguyễn Văn Bảo, Gò Vấp, TP.HCM</p>
+                        <p><i class="bi bi-telephone-fill me-2"></i>0101 010 101</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i>info@thietbimang.vn</p>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="text-uppercase mb-4 fw-bold">Hỗ trợ khách hàng</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-light d-block mb-2">Chính sách bảo hành</a></li>
+                            <li><a href="#" class="text-decoration-none text-light d-block mb-2">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#" class="text-decoration-none text-light d-block mb-2">Kiểm tra đơn hàng</a></li>
+                            <li><a href="#" class="text-decoration-none text-light d-block mb-2">Liên hệ tư vấn</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="text-uppercase mb-4 fw-bold">Cam kết của chúng tôi</h5>
+                        <p><i class="bi bi-patch-check-fill me-2"></i>Chính hãng 100%</p>
+                        <p><i class="bi bi-truck me-2"></i>Giao hàng nhanh chóng</p>
+                        <p><i class="bi bi-shield-lock-fill me-2"></i>Thanh toán bảo mật</p>
+                        <p><i class="bi bi-emoji-smile-fill me-2"></i>Hỗ trợ kỹ thuật 24/7</p>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="mb-0 small">&copy; 2025 Thiết Bị Mạng | Thiết kế bởi Đội Ngũ Phát Triển Nguyễn Phương Nhật Hào - Phạm Văn Chung</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

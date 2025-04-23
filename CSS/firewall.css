@@ -1,3 +1,4 @@
+/* Reset và font chung */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,10 +6,8 @@ body {
     background-color: #dcd3d3;
     padding-top: 110px; /* Bù cho header fixed */
 }
-.bg{
-    background-color: #dcd3d3;
-}
-/* Header*/
+
+/* Header styles */
 header {
     width: 100%;
     position: fixed;
@@ -91,102 +90,53 @@ header {
 .search-button:hover {
     background-color: #0d6a9c;
 }
-.active{
-    color: #1284c2 !important;
-}
-/* sản phẩm */
-.category-card {
-    border: 1px solid #dee2e6;
-    transition: all 0.3s ease;
-    background-color: #fff;
-    border-radius: 12px;
+
+/* Container chính */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
 }
 
-.category-card:hover {
-    background-color: #0d6efd;
-    color: #fff;
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #353535;
+    color: white;
+    padding: 40px 15px;
 }
 
-.category-card i {
-    color: #0d6efd;
+.ft-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.ft-title h3 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.ft-title p a {
+    text-decoration: none;
+    color: white;
     transition: color 0.3s;
 }
 
-.category-card:hover i {
-    color: #fff;
-}
-.card-img-top {
-    width: 100%;
-    height: 250px;
-    object-fit: contain;
-    background: #fff; 
-    padding: 20px; 
-}
-.card:hover {
-    transform: scale(1.05); 
-    transition: transform 0.3s ease-in-out; 
-    border: 2px solid #353535;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    font-weight: 500;
-} 
-.category-card h6 {
-    font-weight: 600;
-    margin: 0;
-}
-footer{
-    width: 100%;
-    background-color: #353535;
-    height: 500px;
-}
-.ft-title{
-    text-align: center;
-    color: white;
-}
-.ft-title h3{
-    padding: 20px 20px;
-    border-bottom: 1px solid white;
-}
-.ft-title p a{
-    text-decoration: none;
-    color: white;
+.ft-title p a:hover {
+    color: #1284c2;
 }
 
-/* modal */
-.modal{
-    margin-top: 100px;
-}
-.modal-body {
-    padding: 20px;
-  }
-
-  .modal-title {
-    font-weight: bold;
-  }
-
-  .btn-close {
-    color: #000;
-  }
-
-  .product-item .btn-primary {
-    width: 100%;
-  }
-
-
-.product-image-container img {
-    max-width: 100%;
-    height: auto;
-    display: block; 
-}
-
+/* Responsive styles */
 @media (max-width: 768px) {
     body {
-        padding-top: 0px; 
+        padding-top: 80px; /* Giảm do ẩn nav-2 */
     }
     
     .nav-2 {
-        display: none !important;
+        display: none;
     }
     
     .nav-1 {

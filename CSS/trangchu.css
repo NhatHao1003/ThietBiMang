@@ -1,15 +1,21 @@
 /* Phần header */
 body{
-
-    font-family: Arial;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dcd3d3;
+    padding-top: 0px;
 }
-.bg{
+.wapper{
+    width: 100%;
     background-color: #dcd3d3;
 }
 header{
     width: 100%;
-    height: auto;
     position: relative;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 .nav-fixed{
     width: 100%;
@@ -25,11 +31,7 @@ header{
     background-color: #dcd3d3;
     border-bottom: 2px solid #353535;
 }
-@media (max-width: 768px) {
-    .nav-2 {
-        display: none !important;
-    }
-}
+
 .active{
     color: #1284c2 !important;
 }
@@ -86,8 +88,13 @@ nav .nav-link:hover{
     border-radius: 20px;
     color: white;
 }
+.tbm-item a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
 .tbm-item:hover{
-    background-color: #71b2d2;
+    background-color: #cfcfcf;
 }
 .tbm-item img:hover{
     padding-bottom: 20px;
@@ -155,4 +162,45 @@ footer{
 .ft-title p a{
     text-decoration: none;
     color: white;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 0px;
+    }
+    
+    .nav-2 {
+        display: none;
+    }
+    
+    .nav-1 {
+        height: auto;
+        padding: 10px 15px;
+        flex-wrap: wrap;
+    }
+    
+    .search-box {
+        order: 3;
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    
+    .navbar-collapse {
+        width: 100%;
+        background-color: #454545;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu ul {
+        flex-direction: column;
+    }
+    
+    .menu ul li {
+        margin-bottom: 5px;
+    }
 }

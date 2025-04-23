@@ -14,7 +14,8 @@
 
 </head>
 <body class="bg">
-    <!-- Phần header -->
+    <div class="wapper">
+        <!-- Phần header -->
     <header>
         <div class="nav-fixed">
             <nav class="nav-1 navbar navbar-expand-lg">
@@ -109,26 +110,34 @@
             <div class="row row-cols-2 row-cols-md-4 g-4 mt-4">
                 <div class="col">
                     <div class="tbm-item">
-                        <img src="./IMG/acesspoints.png" alt="#">
-                        <p>Access Point</p>
+                        <a href="HTML/firewall.html">
+                            <img src="./IMG/firewall.png" alt="FireWall">
+                            <p>FireWall</p>
+                        </a>
                     </div>
                 </div>
                 <div class="col">
                     <div class="tbm-item">
-                        <img src="./IMG/modem.png" alt="#">
-                        <p>Modem</p>
+                        <a href="HTML/modem.html">
+                            <img src="./IMG/modem.png" alt="Modem">
+                            <p>Modem</p>
+                        </a>
                     </div>
                 </div>
                 <div class="col">
                     <div class="tbm-item">
-                        <img src="./IMG/switch.png" alt="#">
-                        <p>Switch</p>
+                        <a href="HTML/switch.html">
+                            <img src="./IMG/switch.png" alt="Switch">
+                            <p>Switch</p>
+                        </a>
                     </div>
                 </div>
                 <div class="col">
                     <div class="tbm-item">
-                        <img src="./IMG/router.jpg" alt="#">
-                        <p>Router</p>
+                        <a href="HTML/router.html">
+                            <img src="./IMG/router.jpg" alt="Router">
+                            <p>Router</p>
+                        </a>
                     </div>
                 </div>
              </div>
@@ -142,7 +151,7 @@
                 <ul class="list-unstyled">
                   <li class="mb-3">
                     <i class="bi bi-check-circle-fill text-success me-2"></i>
-                    <strong>Đa dạng sản phẩm:</strong> Router, Switch, Access Point, Modem, Thiết bị Mesh Wifi...
+                    <strong>Đa dạng sản phẩm:</strong> Router, Switch, FireWall, Thiết bị Wireless...
                   </li>
                   <li class="mb-3">
                     <i class="bi bi-check-circle-fill text-success me-2"></i>
@@ -164,7 +173,7 @@
               </div>
             </div>
           </div>
-        <!-- Cam kết sp -->
+
           <!-- Cam kết chất lượng sản phẩm -->
         <div class="container my-5 py-5">
             <div class="row align-items-center">
@@ -283,16 +292,21 @@
             <h3>Giải đáp thắc mắc</h3>           
         </div>
         <div class="row mt-2">
-            <form>
-                <textarea class="form-control mt-1" name="cauhoi" id="cauhoi" placeholder="Bạn đang thắc mắc về điều gì?"></textarea>
-                <input class="form-control mt-3" type="email" name="emailKH" id="emailKH" placeholder="Email nhận giải đáp:">
-                <button id="bttGui" class="mt-3" type="button">Gửi</button>
-            </form>
+            <div class="col-6">
+                <form>
+                    <textarea class="form-control mt-1" name="cauhoi" id="cauhoi" placeholder="Bạn đang thắc mắc về điều gì?"></textarea>
+                    <input class="form-control mt-3" type="email" name="emailKH" id="emailKH" placeholder="Email nhận giải đáp:">
+                    <button id="bttGui" class="mt-3" type="button">Gửi</button>
+                </form>
+            </div>
+            <div class="col-6">
+
+            </div>
         </div>
 
     </div>
     <footer class="bg-dark text-light pt-5 pb-4">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row text-center text-md-start">
             <!-- Cột 1 -->
             <div class="col-12 col-md-4 mb-4">
@@ -332,5 +346,6 @@
           </div>
         </div>
       </footer>   
+    </div>
 </body>
 </html>

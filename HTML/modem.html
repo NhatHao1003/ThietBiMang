@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Thiết bị mạng uy tín</title>
+   
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/firewall.css">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/jquery-3.7.1.js"></script>
+    <script src="../JS/giohang.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="bg">
+    <!-- Phần header -->
+    <div class="waper container-fluid">
+        <header>
+            <div class="nav-fixed">
+                <nav class="nav-1 navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <!-- logo -->
+                        <a href="../index.html">
+                            <img class="d-block img-fluid" id="logo" src="../IMG/logo.png" alt="Logo">
+                        </a>
+                        <!-- Nút collapse -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <!-- tìm kiếm -->
+                        <form action="">
+                            <div class="search-box">
+                                <input type="text" class="search-input" placeholder="Tìm kiếm...">
+                                <button class="search-button">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- menu -->
+                        <div class="collapse navbar-collapse order-lg-1 justify-content-center menu" id="navbarNav">
+                            <ul class="nav navbar menu-left">
+                                <li class="nav-item"><a href="../index.html" class="nav-link">Trang chủ</a></li>
+                                <li class="nav-item"><a href="./sanpham.html" class="nav-link">Sản Phẩm</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Giới Thiệu</a></li>                       
+                            </ul>   
+                        </div>
+
+                        <div class="collapse navbar-collapse order-lg-1 justify-content-end menu">
+                            <ul class="nav navbar menu-right">
+                                <li class="nav-item">
+                                    <a href="./giohang.html" class="nav-link">
+                                        <i class="bi bi-cart3"></i> Giỏ Hàng
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="bi bi-person-circle"></i> Log In
+                                    </a>
+                                </li>                
+                            </ul>  
+                        </div>
+                    </div>
+                </nav>
+
+                <nav class="navbar navbar-expand-lg nav-2">
+                    <div class="container-fluid justify-content-end">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a href="#" class="nav-link">Kiểm tra bảo hành</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Hướng dẫn mua hàng</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>       
+        </header>
+    
+        <div class="container container-fluid">
+            <section class="text-center mb-5">
+                <h1 class="fw-bold">Modem - Cầu nối Internet cho ngôi nhà của bạn</h1>
+                <p class="text-muted">Giúp bạn kết nối nhanh chóng, ổn định và bảo mật.</p>
+              </section>
+        
+              <!-- Giới thiệu chung -->
+              <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                  <img src="../IMG/modem1.jpg" alt="Modem Internet" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-md-6">
+                  <h3 class="fw-bold">Modem là gì?</h3>
+                  <p>Modem là thiết bị chuyển đổi tín hiệu giữa mạng Internet toàn cầu và thiết bị trong gia đình bạn. Nó đóng vai trò như một cánh cổng, đảm bảo tín hiệu truyền tải đúng cách và ổn định.</p>
+                  <ul>
+                    <li>Kết nối mạng băng thông rộng (cáp quang, ADSL, DSL,...)</li>
+                    <li>Chia sẻ Internet cho nhiều thiết bị cùng lúc</li>
+                    <li>Hỗ trợ bảo mật mạng cơ bản như tường lửa NAT</li>
+                  </ul>
+                </div>
+              </div>
+        
+              <!-- Ưu điểm nổi bật -->
+              <section class="text-center mb-5">
+                <h2 class="fw-bold mb-4">Vì sao bạn nên sử dụng Modem chất lượng cao?</h2>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="p-4 border rounded-3 shadow-sm">
+                      <i class="bi bi-wifi display-4 text-primary"></i>
+                      <h5 class="mt-3">Kết nối nhanh chóng</h5>
+                      <p>Giảm thiểu độ trễ, tải trang web và video mượt mà hơn bao giờ hết.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="p-4 border rounded-3 shadow-sm">
+                      <i class="bi bi-lock-fill display-4 text-success"></i>
+                      <h5 class="mt-3">An toàn dữ liệu</h5>
+                      <p>Tích hợp mã hóa hiện đại giúp ngăn chặn truy cập trái phép.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="p-4 border rounded-3 shadow-sm">
+                      <i class="bi bi-gear-wide-connected display-4 text-warning"></i>
+                      <h5 class="mt-3">Dễ dàng cấu hình</h5>
+                      <p>Quản lý mạng lưới nội bộ chỉ với vài thao tác đơn giản.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        
+              <!-- Các dòng sản phẩm -->
+              <div class="row align-items-center mb-5">
+                <div class="col-md-6 order-md-2">
+                  <img src="../IMG/modem2.jpg" alt="Các loại Modem" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-md-6 order-md-1">
+                  <h3 class="fw-bold">Các loại Modem phổ biến</h3>
+                  <ul>
+                    <li><strong>Modem cáp quang (Fiber):</strong> Dành cho mạng tốc độ cao, ổn định.</li>
+                    <li><strong>Modem DSL:</strong> Phù hợp cho các khu vực có hạ tầng cáp điện thoại.</li>
+                    <li><strong>Modem 4G/5G:</strong> Giải pháp kết nối di động linh hoạt, tiện dụng.</li>
+                    <li><strong>Modem Wifi tích hợp Router:</strong> Tích hợp phát sóng Wi-Fi toàn nhà.</li>
+                  </ul>
+                </div>
+              </div>
+        
+              <!-- CTA -->
+              <div class="text-center my-5">
+                <a href="./sanpham.html" class="btn btn-success btn-lg px-5 py-3">
+                  Khám phá các mẫu Modem tại TechStore
+                </a>
+              </div>
+        
+              <!-- Sự khác nhau giữa modem và router -->
+              <section class="my-5">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h3 class="fw-bold mb-4">Phân biệt Modem và Router: Hiểu rõ từng thiết bị mạng</h3>
+                    
+                    <div class="card mb-4 shadow-sm">
+                      <div class="card-header bg-primary text-white">
+                        <h4 class="my-0"><i class="bi bi-modem me-2"></i>Modem là gì?</h4>
+                      </div>
+                      <div class="card-body">
+                        <p>Modem (Modulator-Demodulator) là thiết bị <strong>kết nối mạng gia đình với nhà cung cấp dịch vụ Internet (ISP)</strong>.</p>
+                        <ul>
+                          <li><strong>Chức năng chính:</strong> Chuyển đổi tín hiệu số từ thiết bị thành tín hiệu tương tự (analog) để truyền qua đường dây điện thoại, cáp quang hoặc DSL, và ngược lại</li>
+                          <li><strong>Kết nối:</strong> Thường chỉ có 1 cổng kết nối với ISP và 1 cổng Ethernet ra</li>
+                          <li><strong>Địa chỉ IP:</strong> Nhận địa chỉ IP công cộng từ ISP</li>
+                          <li><strong>Loại modem phổ biến:</strong> DSL, Cable, Fiber Optic, Dial-up (cũ)</li>
+                          <li><strong>Bảo mật:</strong> Thường không có tường lửa tích hợp</li>
+                        </ul>
+                      </div>
+                    </div>
+              
+                    <div class="card mb-4 shadow-sm">
+                      <div class="card-header bg-success text-white">
+                        <h4 class="my-0"><i class="bi bi-router me-2"></i>Router là gì?</h4>
+                      </div>
+                      <div class="card-body">
+                        <p>Router (Bộ định tuyến) là thiết bị <strong>phân phối kết nối Internet tới nhiều thiết bị trong mạng nội bộ</strong>.</p>
+                        <ul>
+                          <li><strong>Chức năng chính:</strong> Định tuyến lưu lượng mạng, chia sẻ kết nối Internet cho nhiều thiết bị</li>
+                          <li><strong>Kết nối:</strong> Nhiều cổng LAN (thường 4-8 cổng) và phát Wi-Fi</li>
+                          <li><strong>Địa chỉ IP:</strong> Cung cấp địa chỉ IP riêng (192.168.x.x) cho các thiết bị trong mạng</li>
+                          <li><strong>Tính năng nâng cao:</strong> NAT, DHCP, QoS, VPN, tường lửa</li>
+                          <li><strong>Bảo mật:</strong> Có khả năng bảo mật mạng với tường lửa và các tính năng an ninh khác</li>
+                        </ul>
+                      </div>
+                    </div>
+              
+                    <div class="alert alert-info">
+                      <h5><i class="bi bi-lightbulb me-2"></i>Modem-Router Combo (Gateway)</h5>
+                      <p>Nhiều nhà cung cấp dịch vụ hiện nay cung cấp thiết bị tích hợp cả modem và router trong một. Tuy tiện lợi nhưng có thể hạn chế về tính năng và hiệu năng so với việc sử dụng 2 thiết bị riêng biệt.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <div class="text-center mb-4">
+                      <img src="../IMG/modem_router.png" alt="So sánh Modem và Router" class="img-fluid rounded-3 shadow">
+                    </div>                   
+                    <div class="card shadow">
+                      <div class="card-header bg-warning">
+                        <h4 class="my-0"><i class="bi bi-question-circle me-2"></i>Bảng so sánh chi tiết</h4>
+                      </div>
+                      <div class="card-body">
+                        <div class="table-responsive">
+                          <table class="table table-bordered">
+                            <thead class="table-light">
+                              <tr>
+                                <th>Tiêu chí</th>
+                                <th>Modem</th>
+                                <th>Router</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Vị trí trong mạng</td>
+                                <td>Biên giới giữa mạng gia đình và ISP</td>
+                                <td>Bên trong mạng gia đình</td>
+                              </tr>
+                              <tr>
+                                <td>Lớp mạng (OSI)</td>
+                                <td>Lớp 1 (Physical)</td>
+                                <td>Lớp 3 (Network)</td>
+                              </tr>
+                              <tr>
+                                <td>Địa chỉ IP</td>
+                                <td>IP công cộng (Public IP)</td>
+                                <td>IP riêng (Private IP)</td>
+                              </tr>
+                              <tr>
+                                <td>Khả năng kết nối nhiều thiết bị</td>
+                                <td>Không (thường chỉ 1 cổng ra)</td>
+                                <td>Có (nhiều cổng LAN + Wi-Fi)</td>
+                              </tr>
+                              <tr>
+                                <td>Tính năng bảo mật</td>
+                                <td>Hạn chế</td>
+                                <td>Tích hợp tường lửa, VPN, lọc gói tin</td>
+                              </tr>
+                              <tr>
+                                <td>Ví dụ sản phẩm</td>
+                                <td>Arris Surfboard, Netgear CM series</td>
+                                <td>TP-Link Archer, Asus RT series</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="mt-4 p-3 bg-light rounded">
+                      <h5><i class="bi bi-tools me-2"></i>Khi nào cần sử dụng modem và router riêng?</h5>
+                      <p>Nên dùng riêng khi bạn cần:</p>
+                      <ul>
+                        <li>Hiệu suất mạng cao hơn cho game thủ hoặc streamer</li>
+                        <li>Tính năng bảo mật nâng cao</li>
+                        <li>Kiểm soát mạng chi tiết (QoS, VPN, Parental Control)</li>
+                        <li>Mạng doanh nghiệp nhỏ cần ổn định</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+
+            <!-- Video giới thiệu -->
+            <section class="py-5 bg-light">
+                <div class="container">
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-12 text-center">
+                            <h2 class="fw-bold">Video: Modem hoạt động như thế nào?</h2>
+                            <p class="text-muted">Cùng tìm hiểu cơ chế hoạt động của thiết bị nhỏ bé nhưng vô cùng quan trọng này.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="ratio ratio-16x9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/bgM9XHvQSiQ?si=qgVfaGo6oCyAFjnJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                 referrerpolicy="strict-origin-when-cross-origin"
+                                  allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+        
+
+        <!-- Footer -->
+        <footer class="bg-dark text-light pt-5 pb-4">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="text-uppercase mb-4 fw-bold">Liên hệ chúng tôi</h5>
+                        <p><i class="bi bi-geo-alt-fill me-2"></i>12 Nguyễn Văn Bảo, Gò Vấp, TP.HCM</p>
+                        <p><i class="bi bi-telephone-fill me-2"></i>0101 010 101</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i>info@thietbimang.vn</p>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="text-uppercase mb-4 fw-bold">Hỗ trợ khách hàng</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-light d-block mb-2">Chính sách bảo hành</a></li>
+                            <li><a href="#" class="text-decoration-none text-light d-block mb-2">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#" class="text-decoration-none text-light d-block mb-2">Kiểm tra đơn hàng</a></li>
+                            <li><a href="#" class="text-decoration-none text-light d-block mb-2">Liên hệ tư vấn</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4">
+                        <h5 class="text-uppercase mb-4 fw-bold">Cam kết của chúng tôi</h5>
+                        <p><i class="bi bi-patch-check-fill me-2"></i>Chính hãng 100%</p>
+                        <p><i class="bi bi-truck me-2"></i>Giao hàng nhanh chóng</p>
+                        <p><i class="bi bi-shield-lock-fill me-2"></i>Thanh toán bảo mật</p>
+                        <p><i class="bi bi-emoji-smile-fill me-2"></i>Hỗ trợ kỹ thuật 24/7</p>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="mb-0 small">&copy; 2025 Thiết Bị Mạng | Thiết kế bởi Đội Ngũ Phát Triển Nguyễn Phương Nhật Hào - Phạm Văn Chung</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
