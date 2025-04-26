@@ -1,6 +1,6 @@
 /* Reset và font chung */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     margin: 0;
     padding: 0;
     background-color: #dcd3d3;
@@ -132,7 +132,7 @@ footer {
 /* Responsive styles */
 @media (max-width: 768px) {
     body {
-        padding-top: 80px; /* Giảm do ẩn nav-2 */
+        padding-top: 80px; 
     }
     
     .nav-2 {

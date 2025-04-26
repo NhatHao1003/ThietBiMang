@@ -1,14 +1,13 @@
 /* Phần header */
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
+*{
     padding: 0;
-    background-color: #dcd3d3;
-    padding-top: 0px;
+    box-sizing: border-box;
 }
-.wapper{
+.waper{
     width: 100%;
+    font-family: Arial;
     background-color: #dcd3d3;
+
 }
 header{
     width: 100%;

@@ -74,11 +74,16 @@ nav .nav-link:hover{
     text-align: center;
   }
 .btn-remove {
-    
     color: red;
     cursor: pointer;
   }
 /*phần content*/
+section{
+    padding-top: 150px;
+}
+section h2{
+    padding-top: 50px;
+}
 .modal-dialog {
     max-width: 500px; /* Modal rộng hơn 1 chút */
 }
