@@ -100,33 +100,23 @@ header {
 }
 
 /* Footer */
-footer {
+footer{
     width: 100%;
     background-color: #353535;
-    color: white;
-    padding: 40px 15px;
+    min-height: 500px;
 }
-
-.ft-title {
-    text-align: center;
-    color: white;
-    margin-bottom: 30px;
+.hover-link {
+    transition: all 0.3s ease;
+  }
+.hover-link:hover{
+    color: #0dcaf0 !important;
+    transform: translateX(5px);
 }
-
-.ft-title h3 {
-    padding-bottom: 20px;
-    border-bottom: 1px solid white;
-    margin-bottom: 20px;
+footer a:hover{
+    opacity: 0.8;
 }
-
-.ft-title p a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s;
-}
-
-.ft-title p a:hover {
-    color: #1284c2;
+.border-primary{
+    border-color: #0dcaf0 !important;
 }
 
 /* Responsive styles */
