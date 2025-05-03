@@ -1,14 +1,18 @@
+
 document.addEventListener('DOMContentLoaded', function () {
+    // Kiểm tra form đăng ký
     const signupForm = document.getElementById('signupform');
     if (signupForm) {
         signupForm.addEventListener('submit', handleSignup);
     }
 
+    // Kiểm tra form đăng nhập
     const loginForm = document.getElementById('loginform');
     if (loginForm) {
         loginForm.addEventListener('submit', handleLogin);
     }
 
+    // Hàm xử lý đăng ký
     function handleSignup(event) {
         event.preventDefault();
 
@@ -42,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('users', JSON.stringify(users));
 
         alert('Đăng ký thành công!');
-        window.location.href = './dangnhap.html';
+        window.location.href = './HTML/dangnhap.html';
     }
 
     // Hàm xử lý đăng nhập
@@ -58,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (user) {
             localStorage.setItem('currentUser', JSON.stringify(user));
             alert('Đăng nhập thành công!');
-            window.location.href = './thongtintaikhoan.html';
+            window.location.href = './HTML/thongtintaikhoan.html';
         } else {
             alert('Số điện thoại hoặc mật khẩu không đúng!');
         }
@@ -74,59 +78,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return currentUser;
     }
 
-    window.logout = function () {
-        localStorage.removeItem('currentUser');
-        alert('Đăng xuất thành công!');
-        window.location.href = './dangnhap.html';
-    }
-
-    function displayUserInfo() {
-        const currentUser = getCurrentUser();
-        if (currentUser) {
-            const userInfoElement = document.getElementById('user-info');
-            if (userInfoElement) {
-                userInfoElement.innerHTML = `
-                    <h3 class = "d-flex justify-content-center mb-4" style ="font-size: 30px; font-weight: bold">THÔNG TIN TÀI KHOẢN</h3>
-                    <p><strong>Số điện thoại:</strong> ${currentUser.phoneNumber}</p>
-                    <p><strong>Họ tên:</strong> ${currentUser.firstName} ${currentUser.lastName}</p>
-                    <p class="d-flex justify-content-center " style ="font-size: 25px;"><strong>LỊCH SỬ MUA</strong></p>
-                    <div class="table-responsive">
-                    <table class="table table-bordered align-middle">
-                        <thead class="table-primary">
-                        <tr>
-                            <th>Sản phẩm</th>
-                            <th>Số lượng</th>
-                            <th>Giá</th>
-                            <th>Thành tiền</th>
-                        </tr>
-                        </thead>
-                        <tbody id="order-summary">
-
-                        </tbody>
-                    </table>
-                    </div>
-                    <button onclick="logout()" class="btn btn-danger mt-3" style="margin-left: 460px">Đăng xuất</button>
-                `;
-            }
-        } else {
-            window.location.href = './dangnhap.html';
-        }
-    }
-
-    // Kiểm tra trạng thái đăng nhập & hiển thị thông tin nếu cần
-    const protectedPages = ['./index.html', 'thongtintaikhoan.html'];
-    const currentPage = window.location.pathname.split('/').pop();
-
-    if (protectedPages.includes(currentPage)) {
-        const currentUser = getCurrentUser();
-        if (!currentUser) {
-            window.location.href = './dangnhap.html';
-        }
-    }
-
-    if (currentPage === 'index.html' || currentPage === 'thongtintaikhoan.html') {
-        displayUserInfo();
-    }
 
     function updateNavbar() {
         const currentUser = getCurrentUser();
@@ -134,13 +85,15 @@ document.addEventListener('DOMContentLoaded', function () {
         if (loginLink) {
             if (currentUser) {
                 loginLink.innerHTML = `<i class="bi bi-person-circle"></i> ${currentUser.firstName} ${currentUser.lastName}`;
-                loginLink.href = './thongtintaikhoan.html';
+                loginLink.href = './HTML/thongtintaikhoan.html';
             } else {
                 loginLink.innerHTML = `<i class="bi bi-person-circle"></i> Login`;
-                loginLink.href = './dangnhap.html';
+                loginLink.href = './HTML/dangnhap.html';
             }
         }
     }
 
-    updateNavbar();
+    if (document.getElementById('login-link')) {
+        updateNavbar();
+    }
 });

@@ -59,22 +59,22 @@ $(document).ready(function () {
     // Thêm vào giỏ hàng
     $("#addToCartBtn").click(function () {
         let quantityInput = $("#quantity");
-    let quantity = quantityInput.length ? parseInt(quantityInput.val()) : 1; // Nếu không có #quantity thì mặc định 1
+        let quantity = quantityInput.length ? parseInt(quantityInput.val()) : 1; // Nếu không có #quantity thì mặc định 1
 
-    let productName = $(this).data("product-name");
-    let productPrice = parseInt($(this).data("product-price").replace(/\D/g, ''));
-    let productImage = $(this).data("product-image");
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let productName = $(this).data("product-name"); 
+        let productPrice = parseInt($(this).data("product-price").replace(/\D/g, ''));
+        let productImage = $(this).data("product-image");
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    let existingItem = cart.find(item => item.name === productName);
-    if (existingItem) {
-        existingItem.quantity += quantity;
-    } else {
-        cart.push({ name: productName, price: productPrice, quantity: quantity, image: productImage });
-    }
+        let existingItem = cart.find(item => item.name === productName);
+        if (existingItem) {
+            existingItem.quantity += quantity;
+        } else {
+            cart.push({ name: productName, price: productPrice, quantity: quantity, image: productImage });
+        }
 
-    localStorage.setItem('cart', JSON.stringify(cart));
-    alert("Đã thêm vào giỏ hàng!");
-    $('#productDetailModal').modal('hide');
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert("Đã thêm vào giỏ hàng!");
+        $('#productDetailModal').modal('hide');
     });
 });

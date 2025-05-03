@@ -150,9 +150,10 @@ header {
     }
 }
 
-.card img {
+
+.card a img {
+    width: 100%;
     height: 120px;
-    border-radius: 20px;
 }
 
 .row-company {
@@ -164,10 +165,11 @@ header {
 .col-3 {
     width: 200px;
     border-radius: 15px;
+    margin: 0 40px;
 }
 
-.col-3:hover {
-    background-color: #1284c2;
+.card a img:hover{
+    border: 2px solid rgb(59, 59, 165);
 }
 
 
