@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechStore - Đăng nhập</title>
+  <title>TechStore - Linh kiện mạng uy tín</title>
   <link rel="stylesheet" href="../CSS/bootstrap.min.css">
-  <link rel="stylesheet" href="../CSS/dangnhap.css">
+  <link rel="stylesheet" href="../CSS/kiemtrabaohanh.css">
   <script src="../JS/bootstrap.bundle.min.js"></script>
   <script src="../JS/jquery-3.7.1.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -62,37 +62,95 @@
     </div>
   </header>
 
-  <!-- Form Đăng nhập -->
-  <div class="content">
-    <main class="login-container">
-      <h2>Đăng Nhập</h2>
-      <form action="" class="login-form">
-        <div id="row-1" class="form-group">
-          <label class="mb-2" for="sodt">Số điện thoại</label>
-          <input class="form-control mb-2" type="text" placeholder="Số điện thoại" id="sodt" name="sodt" required>
-        </div>
-        <div class="form-group position-relative">
-          <label class="mb-2" for="password">Mật khẩu</label>
-          <input class="form-control mb-2" type="password" name="password" id="password" placeholder="Mật khẩu"
-            required>
-          <span id="password-display">
-            <i class="bi bi-eye-slash-fill"></i>
-          </span>
-        </div>
-        <div class="form-group">
-          <button class="btn btn-primary w-100 mt-4"> Đăng nhập</button>
-        </div>
-        <div class="form-group">
-          <a href="" class="d-flex justify-content-center mt-2 text-decoration-none text-muted">Quên mật khẩu? </a>
-        </div>
-        <div class="form-group">
-          <p class="mt-4 d-flex justify-content-center">Bạn chưa có tài khoản?<a href="./dangky.html"
-              class="d-flex text-decoration-none text-muted"> Đăng ký</a></p>
-        </div>
-      </form>
-    </main>
+  <div class="content1">
+    <h1 class="d-flex justify-content-center mt-4">Tra cứu thông tin bảo hành</h1>
+    <div class="search-type">
+      <ul>
+        <li><input type="radio" name="group-type-search">Tra theo số điện thoại</li>
+        <li><input type="radio" name="group-type-search">Tra theo mã sản phẩm</li>
+        <li><input type="radio" name="group-type-search">Tra theo số phiếu bảo hành</li>
+        <li><input type="radio" name="group-type-search">Tra cứu bảo hành sản phẩm</li>
+      </ul>
+    </div>
+    <div class="search">
+      <input type="text" name="search" id="search" class=" d-flex justify-content-start">
+      <button type="button" class="btn btn-primary d-flex justify-content-end">Tra cứu</button>
+      <p>Tổng đài hỗ trợ bảo hành(8h - 20h): <strong>0101010101 </strong></p>
+    </div>
   </div>
 
+  <div class="content2">
+    <h1 class="d-flex justify-content-center mt-4">Chọn Hãng Cần Tìm Điểm Bảo Hành</h1>
+    <div class="company">
+      <div class="row row-company">
+        <div class="col-3">
+          <div class="card">
+            <img src="../IMG/logo/logo-aptek.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card"><img src="../IMG/logo/logo-asus.jpg" alt=""></div>
+        </div>
+        <div class="col-3">
+          <div class="card"><img src="../IMG/logo/logo-gigabyte.jpg" alt=""></div>
+        </div>
+        <div class="col-3">
+          <div class="card"><img src="../IMG/logo/logo-hp.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content3">
+    <h1 class="d-flex justify-content-center mt-4 mb-5">Chính Sách Đổi Trả, Bảo Hành Cho Khách Hàng TechStore</h1>
+    <div class="row g-4 row-rule">
+      <div class="col-6 section-rule">
+        <h3>CHÍNH SÁCH ĐỔI MỚI:
+        </h3>
+        <h4> + Đổi mới trong 15 ngày:</h4>
+        <ul>
+          <li>Các sản phẩm được mua trong vòng 15 ngày, nếu gặp lỗi kỹ thuật do nhà sản xuất, khách hàng sẽ được đổi mới
+            ngay lập tức.</li>
+          <li>Không áp dụng cho các sản phẩm như: thiết bị in ấn (máy in, máy fax), máy chiếu, các thiết bị tiêu hao và
+            sản phẩm của Apple (MacBook, iMac, iPad, iPhone…).</li>
+        </ul>
+        <h4> + Đổi mới trong 15 ngày:</h4>
+        <ul>
+          <li>Đối với linh kiện mạng chuyên dụng (router, switch, access point...), nếu phát sinh lỗi kỹ thuật trong
+            vòng 30 ngày kể từ ngày mua, TechStore sẽ đổi mới ngay lập tức cho khách hàng.</li>
+        </ul>
+      </div>
+      <div class="col-6 section-rule">
+        <h3>CHÍNH SÁCH BẢO HÀNH CHUNG</h3>
+        <ul>
+          <li>Thời gian xử lý bảo hành trung bình: 07 ngày làm việc (không tính Thứ 7, Chủ nhật và các ngày lễ).</li>
+          <li>Trường hợp hoàn tất bảo hành sớm hơn, TechStore sẽ chủ động liên hệ sớm với khách hàng.</li>
+          <li>Nếu việc bảo hành kéo dài hơn 07 ngày, khách hàng sẽ được thông báo thời gian cụ thể.</li>
+          <li>Hỗ trợ mượn thiết bị tương ứng trong thời gian chờ bảo hành (nếu còn thiết bị thay thế).</li>
+          <li>Miễn phí kiểm tra lỗi cho các sản phẩm không mua tại TechStore.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row g-4 row-rule">
+      <div class="col-6 section-rule">
+        <h3>CHÍNH SÁCH BẢO HÀNH CHO KHỐI DOANH NGHIỆP</h3>
+        <ul>
+          <li>Bảo hành tại chỗ trong 12 tháng đầu, không giới hạn số lượng thiết bị, trong bán kính 20km từ địa chỉ TechStore.</li>
+          <li>Trường hợp ngoài bán kính 20km: bảo hành sẽ được thỏa thuận linh hoạt với doanh nghiệp.</li>
+          <li>Thiết bị thay thế tạm thời sẽ được cung cấp trong quá trình bảo hành (nếu có).</li>
+          <li>Với thiết bị đã hết bảo hành: TechStore sẽ hỗ trợ kiểm tra và xác định lỗi miễn phí.</li>
+        </ul>
+      </div>
+      <div class="col-6 section-rule">
+        <h3>CHÍNH SÁCH BẢO HÀNH CHO KHÁCH HÀNG GAME NET</h3>
+        <ul>
+          <li>Đổi trả tận nơi sử dụng, áp dụng trong bán kính 20km từ TechStore (ngoài 20km sẽ thỏa thuận cụ thể).</li>
+          <li>Bảo hành tại địa điểm sử dụng, xuyên suốt thời hạn bảo hành của sản phẩm.</li>
+          <li>Hỗ trợ thiết bị thay thế tương đương, nếu sản phẩm cần mang về trung tâm để bảo hành.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-dark text-light pt-5 pb-4" style="background-color: #1a1a1a;">
@@ -183,25 +241,5 @@
     </div>
   </footer>
 </body>
-<script>
-  const passwordDisplay = document.getElementById("password-display");
-  const password = document.getElementById("password");
-  const icon = document.querySelector("#password-display i");
-
-  passwordDisplay.addEventListener("click", function () {
-    const type = password.getAttribute("type") === "password" ? "text" : "password";
-
-    password.setAttribute("type", type);
-
-    if (type == "password") {
-      icon.classList.remove("bi-eye-fill");
-      icon.classList.add("bi-eye-slash-fill");
-    }
-    else {
-      icon.classList.remove("bi-eye-slash-fill");
-      icon.classList.add("bi-eye-fill");
-    }
-  });
-</script>
 
 </html>

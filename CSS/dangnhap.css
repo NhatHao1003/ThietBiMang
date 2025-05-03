@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Header */
+header {
+    width: 100%;
+    position: relative;
+}
+
+.nav-fixed {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+.nav-1 {
+    height: 80px;
+    background-color: #353535;
+}
+
+.nav-2 {
+    height: 30px;
+    background-color: #dcd3d3;
+    border-bottom: 2px solid #353535;
+}
+
+@media (max-width: 768px) {
+    .nav-2 {
+        display: none !important;
+    }
+}
+
+#logo {
+    width: 100px;
+    height: 50px;
+}
+
+.menu ul li a {
+    color: white;
+    font-weight: bolder;
+}
+
+.nav-link:hover {
+    color: #1284c2;
+}
+
+.active {
+    color: #1284c2 !important;
+}
+
+/* Tìm kiếm */
+.search-box {
+    display: flex;
+    flex: 1;
+    max-width: 400px;
+    margin: 0 15px;
+}
+.search-input {
+    border: none;
+    flex: 1;
+    padding: 7px 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    min-width: 120px;
+}
+.search-button {
+    background-color: #1284c2;
+    border: none;
+    color: white;
+    padding: 0 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+/* main */
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    min-height: 100px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.login-container h2 {
+    display: flex;
+    justify-content: center;
+    color: #1284C2;
+    font-size: 40px;
+}
+
+.login-form {
+    padding-left: 20px;
+    padding-top: 15px;
+    width: 450px;
+    margin: 0 auto;
+}
+
+#row-1{
+    border-top: 1px solid rgb(202, 201, 201);
+}
+
+
+#password-display {
+    position: absolute;
+    top: 79%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #888;
+    z-index: 10px;
+}
+
+.login-form label {
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.form-group p {
+    border-top: 1px solid rgb(202, 201, 201);
+    padding-top: 10px;
+}
+
+.form-group a:hover {
+    transition: color 0.3s ease;
+    color: #1284C2 !important;
+}
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #353535;
+    color: white;
+    min-height: 500px;
+}
+
+.hover-link {
+    transition: all 0.3s ease;
+}
+
+.hover-link:hover {
+    color: #0dcaf0 !important;
+    transform: translateX(5px);
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+.border-primary {
+    border-color: #0dcaf0 !important;
+}

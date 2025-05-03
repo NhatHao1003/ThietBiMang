@@ -1,394 +1,389 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechStore - Thiết bị mạng uy tín</title>
-    <link rel="stylesheet" href="../CSS/sanpham.css">
-    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
-    <script src="../JS/bootstrap.bundle.min.js"></script>
-    <script src="../JS/jquery-3.7.1.js"></script>
-    <script src="../JS/sanpham.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore - Thiết bị mạng uy tín</title>
+  <link rel="stylesheet" href="../CSS/sanpham.css">
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+  <script src="../JS/bootstrap.bundle.min.js"></script>
+  <script src="../JS/jquery-3.7.1.js"></script>
+  <script src="../JS/sanpham.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 
 </head>
+
 <body class="bg">
-    <!-- Phần header -->
-    <header>
-        <div class="nav-fixed">
-            <nav class="nav-1 navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <!-- logo -->
-                    <a href="../index.html"><img class="d-block img-fluid" id="logo" src="../IMG/logo.png" alt="Logo"></a>
-                        <!-- Nút collapse -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <!-- tìm kiếm -->
-                    <form action="">
-                        <div class="search-box">
-                            <input type="text" class="search-input" placeholder="Tìm kiếm...">
-                            <button class="search-button">
-                                <i class="bi bi-search"></i>
-                            </button>
-                        </div>
-                    </form>
-                    <!-- menu -->
-                    <div class="collapse navbar-collapse order-lg-1 justify-content-center menu" id="navbarNav" >
-                        <ul class="nav navbar menu-left" >
-                            <li class="nav-item"><a href="../index.html" class="nav-link">Trang chủ</a></li>
-                            <li class="nav-item"><a href="./sanpham.html" class="nav-link active">Sản Phẩm</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Giới Thiệu</a></li>                       
-                        </ul>   
-                    </div>
-                    <div class="collapse navbar-collapse order-lg-1 justify-content-end menu" >
-                        <ul class="nav navbar menu-right">
-                            <li class="nav-item"><a href="./giohang.html" class="nav-link">
-                                <i class="bi bi-cart3"></i>
-                                Giỏ Hàng
-                            </a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">
-                                <i class="bi bi-person-circle"></i>
-                                Log In
-                            </a></li>                
-                        </ul>  
-                    </div>
-                </div>
-            </nav>
-            <nav class="navbar navbar-expand-lg nav-2">
-                <div class="container-fluid justify-content-end">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a href="#" class="nav-link">Kiểm tra bảo hành</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Hướng dẫn mua hàng</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Liên hệ</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        
-    </header>
-    <!-- Content -->
-    <section class="py-5 bg-light">
-        <div class="container">
-          <h2 class="text-center fw-bold mb-5">Danh Mục Sản Phẩm</h2>
-          <div class="row g-3 justify-content-center" id="category-list">
-      
-            <!-- Router Wifi -->
-            <div class="col-6 col-md-3">
-              <div class="card category-card text-center p-3" data-category="router">
-                <i class="fa-solid fa-wifi fa-3x text-primary mb-2"></i>
-                <h6 class="fw-bold">Router Wifi</h6>
-              </div>
+  <!-- Phần header -->
+  <header>
+    <div class="nav-fixed">
+      <nav class="nav-1 navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- logo -->
+          <a href="../index.html"><img class="d-block img-fluid" id="logo" src="../IMG/logo.png" alt="Logo"></a>
+          <!-- Nút collapse -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- tìm kiếm -->
+          <form action="">
+            <div class="search-box">
+              <input type="text" class="search-input" placeholder="Tìm kiếm...">
+              <button class="search-button">
+                <i class="bi bi-search"></i>
+              </button>
             </div>
-      
-            <!-- Switch Mạng -->
-            <div class="col-6 col-md-3">
-              <div class="card category-card text-center p-3" data-category="switch">
-                <i class="fa-solid fa-network-wired fa-3x text-success mb-2"></i>
-                <h6 class="fw-bold">Switch Mạng</h6>
-              </div>
-            </div>
-      
-            <!-- Thiết bị Wireless -->
-            <div class="col-6 col-md-3">
-              <div class="card category-card text-center p-3" data-category="wireless">
-                <i class="fa-solid fa-tower-broadcast fa-3x text-warning mb-2"></i>
-                <h6 class="fw-bold">Thiết Bị Wireless</h6>
-              </div>
-            </div>
-      
-            <!-- Phụ kiện Mạng -->
-            <div class="col-6 col-md-3">
-              <div class="card category-card text-center p-3" data-category="accessory">
-                <i class="fa-solid fa-plug fa-3x text-danger mb-2"></i>
-                <h6 class="fw-bold">Phụ Kiện Mạng</h6>
-              </div>
-            </div>
-      
-            <!-- Firewall (thiết bị bảo mật mạng) -->
-            <div class="col-6 col-md-3">
-              <div class="card category-card text-center p-3" data-category="firewall">
-                <i class="fa-solid fa-shield-halved fa-3x text-info mb-2"></i>
-                <h6 class="fw-bold">Firewall</h6>
-              </div>
-            </div>
-      
-            <!-- Lưu trữ NAS -->
-            <div class="col-6 col-md-3">
-              <div class="card category-card text-center p-3" data-category="storage">
-                <i class="fa-solid fa-database fa-3x text-secondary mb-2"></i>
-                <h6 class="fw-bold">Thiết Bị Lưu Trữ</h6>
-              </div>
-            </div>
-      
+          </form>
+          <!-- menu -->
+          <div class="collapse navbar-collapse order-lg-1 justify-content-center menu" id="navbarNav">
+            <ul class="nav navbar menu-left">
+              <li class="nav-item"><a href="../index.html" class="nav-link">Trang chủ</a></li>
+              <li class="nav-item"><a href="./sanpham.html" class="nav-link active">Sản Phẩm</a></li>
+              <li class="nav-item"><a href="./gioithieu.html" class="nav-link">Giới Thiệu</a></li>
+            </ul>
           </div>
-      
-          <!-- Nút Hiển thị tất cả -->
-          <!-- Nút "Hiển thị tất cả sản phẩm" -->
-            <div class="text-center mt-4 mb-4">
-                <button id="showAllProducts" class="btn btn-info btn-sm" data-category="show-all-btn button">Hiển thị tất cả sản phẩm</button>
-            </div>     
-        </div>
-      </section>
-      
-      
-    <!-- Danh sách sản phẩm  -->
-    <section class="py-5">
-        <div class="container">
-          <h2 class="text-center mb-5 fw-bold">Danh Sách Sản Phẩm</h2>
-          <div class="row g-4" id="product-list">
-      
-            <!-- Router -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="router">
-                <div class="card h-100">
-                    <img src="../IMG/SanPham/ArcherC54.png" class="card-img-top" alt="Router TP-Link Archer C54">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Router TP-Link Archer C54</h5>
-                        <p class="card-text">499.000đ</p>
-                        <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
-                    </div>
-                </div>
-            </div>
-      
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="router">
-              <div class="card h-100">
-                <img src="../IMG/SanPham/ax1000.jpg" class="card-img-top" alt="Router TP-Link Archer AX20">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Router TP-Link Archer AX1500</h5>
-                  <p class="card-text">1.190.000đ</p>
-                  <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="router">
-              <div class="card h-100">
-                <img src="../IMG/SanPham/tendAC23.png" class="card-img-top" alt="Router Tenda AC23 AC2100">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Router Tenda AC23 AC2100</h5>
-                  <p class="card-text">990.000đ</p>
-                  <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="router">
-              <div class="card h-100">
-                <img src="../IMG/SanPham/AcherC64.png" class="card-img-top" alt="Router TP-Link Archer C64">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Router TP-Link Archer C64</h5>
-                  <p class="card-text">799.000đ</p>
-                  <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="router">
-              <div class="card h-100">
-                <img src="../IMG/SanPham/ax23.png" class="card-img-top" alt="Router TP-Link Archer AX23">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Router TP-Link Archer AX23</h5>
-                  <p class="card-text">1.690.000đ</p>
-                  <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="router">
-              <div class="card h-100">
-                <img src="../IMG/SanPham/RTAX59U.png" class="card-img-top" alt="Router Asus RT-AX59U">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Router Asus RT-AX59U</h5>
-                  <p class="card-text">3.290.000đ</p>
-                  <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Switch mạng -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="switch">
-              <div class="card h-100">
-                <img src="../IMG/SanPham/SG350.png" class="card-img-top" alt="Switch Cisco SG350-10">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Switch Cisco SG350-10</h5>
-                  <p class="card-text">5.490.000đ</p>
-                  <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="switch">
-              <div class="card h-100">
-                <img src="../IMG/SanPham/SG150.png" class="card-img-top" alt="Switch TP-Link TL-SG105">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Switch TP-Link TL-SG105</h5>
-                  <p class="card-text">499.000đ</p>
-                  <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="switch">
-              <div class="card h-100">
-                <img src="../IMG/SanPham/DG150.png" class="card-img-top" alt="Switch D-Link DGS-105">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Switch D-Link DGS-105</h5>
-                  <p class="card-text">520.000đ</p>
-                  <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="switch">
-              <div class="card h-100">
-                <img src="../IMG/SanPham/SF1005D.png" class="card-img-top" alt="Switch TP-Link TL-SF1005D">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Switch TP-Link TL-SF1005D</h5>
-                  <p class="card-text">220.000đ</p>
-                  <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
-                </div>
-              </div>  
-            </div>
-                  <!-- Wireless  -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="wireless">
-        <div class="card h-100">
-          <img src="../IMG/SanPham/E5577.png" class="card-img-top" alt="Bộ phát Wifi 4G Huawei E5577">
-          <div class="card-body text-center">
-            <h5 class="card-title">Huawei E5577 4G</h5>
-            <p class="card-text">1.490.000đ</p>
-            <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+          <div class="collapse navbar-collapse order-lg-1 justify-content-end menu">
+            <ul class="nav navbar menu-right">
+              <li class="nav-item"><a href="./giohang.html" class="nav-link">
+                  <i class="bi bi-cart3"></i>
+                  Giỏ Hàng
+                </a></li>
+              <li class="nav-item"><a href="./dangnhap.html" class="nav-link">
+                  <i class="bi bi-person-circle"></i>
+                  Log In
+                </a></li>
+            </ul>
           </div>
         </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg nav-2">
+        <div class="container-fluid justify-content-end">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="./kiemtrabaohanh.html" class="nav-link">Kiểm tra bảo hành</a></li>
+            <li class="nav-item"><a href="./huongdanmuahang.html" class="nav-link">Hướng dẫn mua hàng</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="./lienhe.html" class="nav-link">Liên hệ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+  <!-- Content -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Danh Mục Sản Phẩm</h2>
+      <div class="row g-3 justify-content-center" id="category-list">
+
+        <div class="col-6 col-md-3">
+          <div class="card category-card text-center p-3" data-category="router">
+            <i class="fa-solid fa-wifi fa-3x text-primary mb-2"></i>
+            <h6 class="fw-bold">Router Wifi</h6>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card category-card text-center p-3" data-category="switch">
+            <i class="fa-solid fa-network-wired fa-3x text-success mb-2"></i>
+            <h6 class="fw-bold">Switch Mạng</h6>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card category-card text-center p-3" data-category="wireless">
+            <i class="fa-solid fa-tower-broadcast fa-3x text-warning mb-2"></i>
+            <h6 class="fw-bold">Thiết Bị Wireless</h6>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card category-card text-center p-3" data-category="accessory">
+            <i class="fa-solid fa-plug fa-3x text-danger mb-2"></i>
+            <h6 class="fw-bold">Phụ Kiện Mạng</h6>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card category-card text-center p-3" data-category="firewall">
+            <i class="fa-solid fa-shield-halved fa-3x text-info mb-2"></i>
+            <h6 class="fw-bold">Firewall</h6>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="card category-card text-center p-3" data-category="storage">
+            <i class="fa-solid fa-database fa-3x text-secondary mb-2"></i>
+            <h6 class="fw-bold">Thiết Bị Lưu Trữ</h6>
+          </div>
+        </div>
+
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="wireless">
-        <div class="card h-100">
-          <img src="../IMG/SanPham/MF885.png" class="card-img-top" alt="ZMI MF885 4G">
-          <div class="card-body text-center">
-            <h5 class="card-title">ZMI MF885 4G</h5>
-            <p class="card-text">1.690.000đ</p>
-            <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+      <div class="text-center mt-4 mb-4">
+        <button id="showAllProducts" class="btn btn-info btn-sm" data-category="show-all-btn button">Hiển thị tất cả sản
+          phẩm</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Danh sách sản phẩm  -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">Danh Sách Sản Phẩm</h2>
+      <div class="row g-4" id="product-list">
+
+        <!-- Router -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="router">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/ArcherC54.png" class="card-img-top" alt="Router TP-Link Archer C54">
+            <div class="card-body text-center">
+              <h5 class="card-title">Router TP-Link Archer C54</h5>
+              <p class="card-text">499.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Phụ kiện mạng -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="accessory">
-        <div class="card h-100">
-          <img src="../IMG/SanPham/cat6.png" class="card-img-top" alt="Đầu nối mạng Cat6 Commscope">
-          <div class="card-body text-center">
-            <h5 class="card-title">Đầu nối Cat6 Commscope</h5>
-            <p class="card-text">30.000đ</p>
-            <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="router">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/ax1000.jpg" class="card-img-top" alt="Router TP-Link Archer AX20">
+            <div class="card-body text-center">
+              <h5 class="card-title">Router TP-Link Archer AX1500</h5>
+              <p class="card-text">1.190.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="accessory">
-        <div class="card h-100">
-          <img src="../IMG/SanPham/cat6.png" class="card-img-top" alt="Cáp mạng Cat5e Dintek UTP">
-          <div class="card-body text-center">
-            <h5 class="card-title">Cáp mạng Dintek Cat5e</h5>
-            <p class="card-text">1.290.000đ</p>
-            <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="router">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/tendAC23.png" class="card-img-top" alt="Router Tenda AC23 AC2100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Router Tenda AC23 AC2100</h5>
+              <p class="card-text">990.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="accessory">
-        <div class="card h-100">
-          <img src="../IMG/SanPham/RJ45.png" class="card-img-top" alt="Đầu bấm mạng RJ45 Leviton">
-          <div class="card-body text-center">
-            <h5 class="card-title">Đầu bấm RJ45 Leviton</h5>
-            <p class="card-text">40.000đ</p>
-            <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="router">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/AcherC64.png" class="card-img-top" alt="Router TP-Link Archer C64">
+            <div class="card-body text-center">
+              <h5 class="card-title">Router TP-Link Archer C64</h5>
+              <p class="card-text">799.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- ================== Firewall (tường lửa mạng) ================== -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="firewall">
-        <div class="card h-100">
-          <img src="../IMG/SanPham/30E.png" class="card-img-top" alt="Firewall Fortinet FortiGate 30E">
-          <div class="card-body text-center">
-            <h5 class="card-title">Firewall Fortinet 30E</h5>
-            <p class="card-text">9.990.000đ</p>
-            <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="router">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/ax23.png" class="card-img-top" alt="Router TP-Link Archer AX23">
+            <div class="card-body text-center">
+              <h5 class="card-title">Router TP-Link Archer AX23</h5>
+              <p class="card-text">1.690.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="firewall">
-        <div class="card h-100">
-          <img src="../IMG/SanPham/sophosXG86.png" class="card-img-top" alt="Firewall Sophos XG 86">
-          <div class="card-body text-center">
-            <h5 class="card-title">Firewall Sophos XG 86</h5>
-            <p class="card-text">7.590.000đ</p>
-            <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="router">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/RTAX59U.png" class="card-img-top" alt="Router Asus RT-AX59U">
+            <div class="card-body text-center">
+              <h5 class="card-title">Router Asus RT-AX59U</h5>
+              <p class="card-text">3.290.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- ================== NAS Storage (lưu trữ mạng) ================== -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="storage">
-        <div class="card h-100">
-          <img src="../IMG/SanPham/DS220.png" class="card-img-top" alt="Synology DS220+ NAS">
-          <div class="card-body text-center">
-            <h5 class="card-title">Synology NAS DS220+</h5>
-            <p class="card-text">9.490.000đ</p>
-            <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+        <!-- Switch mạng -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="switch">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/SG350.png" class="card-img-top" alt="Switch Cisco SG350-10">
+            <div class="card-body text-center">
+              <h5 class="card-title">Switch Cisco SG350-10</h5>
+              <p class="card-text">5.490.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="storage">
-        <div class="card h-100">
-          <img src="../IMG/SanPham/WD.png" class="card-img-top" alt="NAS WD My Cloud Home 4TB">
-          <div class="card-body text-center">
-            <h5 class="card-title">WD My Cloud Home 4TB</h5>
-            <p class="card-text">5.990.000đ</p>
-            <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="switch">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/SG150.png" class="card-img-top" alt="Switch TP-Link TL-SG105">
+            <div class="card-body text-center">
+              <h5 class="card-title">Switch TP-Link TL-SG105</h5>
+              <p class="card-text">499.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="router">
-        <div class="card h-100">
-          <img src="../IMG/SanPham/ArcherC54.png" class="card-img-top" alt="Router TP-Link Archer C54">
-          <div class="card-body text-center">
-            <h5 class="card-title">Router TP-Link Archer C54</h5>
-            <p class="card-text">499.000đ</p>
-            <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="switch">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/DG150.png" class="card-img-top" alt="Switch D-Link DGS-105">
+            <div class="card-body text-center">
+              <h5 class="card-title">Switch D-Link DGS-105</h5>
+              <p class="card-text">520.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="switch">
-        <div class="card h-100">
-          <img src="../IMG/SanPham/DGS108.png" class="card-img-top" alt="Switch D-Link DGS-108">
-          <div class="card-body text-center">
-            <h5 class="card-title">Switch D-Link DGS-108</h5>
-            <p class="card-text">690.000đ</p>
-            <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="switch">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/SF1005D.png" class="card-img-top" alt="Switch TP-Link TL-SF1005D">
+            <div class="card-body text-center">
+              <h5 class="card-title">Switch TP-Link TL-SF1005D</h5>
+              <p class="card-text">220.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
+          </div>
+        </div>
+        <!-- Wireless  -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="wireless">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/E5577.png" class="card-img-top" alt="Bộ phát Wifi 4G Huawei E5577">
+            <div class="card-body text-center">
+              <h5 class="card-title">Huawei E5577 4G</h5>
+              <p class="card-text">1.490.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="wireless">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/MF885.png" class="card-img-top" alt="ZMI MF885 4G">
+            <div class="card-body text-center">
+              <h5 class="card-title">ZMI MF885 4G</h5>
+              <p class="card-text">1.690.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phụ kiện mạng -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="accessory">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/cat6.png" class="card-img-top" alt="Đầu nối mạng Cat6 Commscope">
+            <div class="card-body text-center">
+              <h5 class="card-title">Đầu nối Cat6 Commscope</h5>
+              <p class="card-text">30.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="accessory">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/cat6.png" class="card-img-top" alt="Cáp mạng Cat5e Dintek UTP">
+            <div class="card-body text-center">
+              <h5 class="card-title">Cáp mạng Dintek Cat5e</h5>
+              <p class="card-text">1.290.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="accessory">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/RJ45.png" class="card-img-top" alt="Đầu bấm mạng RJ45 Leviton">
+            <div class="card-body text-center">
+              <h5 class="card-title">Đầu bấm RJ45 Leviton</h5>
+              <p class="card-text">40.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================== Firewall (tường lửa mạng) ================== -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="firewall">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/30E.png" class="card-img-top" alt="Firewall Fortinet FortiGate 30E">
+            <div class="card-body text-center">
+              <h5 class="card-title">Firewall Fortinet 30E</h5>
+              <p class="card-text">9.990.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="firewall">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/sophosXG86.png" class="card-img-top" alt="Firewall Sophos XG 86">
+            <div class="card-body text-center">
+              <h5 class="card-title">Firewall Sophos XG 86</h5>
+              <p class="card-text">7.590.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================== NAS Storage (lưu trữ mạng) ================== -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="storage">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/DS220.png" class="card-img-top" alt="Synology DS220+ NAS">
+            <div class="card-body text-center">
+              <h5 class="card-title">Synology NAS DS220+</h5>
+              <p class="card-text">9.490.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="storage">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/WD.png" class="card-img-top" alt="NAS WD My Cloud Home 4TB">
+            <div class="card-body text-center">
+              <h5 class="card-title">WD My Cloud Home 4TB</h5>
+              <p class="card-text">5.990.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="router">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/ArcherC54.png" class="card-img-top" alt="Router TP-Link Archer C54">
+            <div class="card-body text-center">
+              <h5 class="card-title">Router TP-Link Archer C54</h5>
+              <p class="card-text">499.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item" data-category="switch">
+          <div class="card h-100">
+            <img src="../IMG/SanPham/DGS108.png" class="card-img-top" alt="Switch D-Link DGS-108">
+            <div class="card-body text-center">
+              <h5 class="card-title">Switch D-Link DGS-108</h5>
+              <p class="card-text">690.000đ</p>
+              <button class="btn btn-primary btn-sm">Xem Chi Tiết</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
   </section>
 
-      
-      
-      
+
+
+
   <footer class="bg-dark text-light pt-5 pb-4" style="background-color: #1a1a1a;">
     <div class="container-fluid px-4 px-lg-5">
       <div class="row g-4">
-        
+
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="d-flex align-items-center mb-4">
             <img src="../IMG/logo.png" alt="Logo" class="me-2" style="height: 40px;">
@@ -396,49 +391,68 @@
           </div>
           <p class="mb-3">Chuyên cung cấp thiết bị mạng chính hãng, giải pháp mạng toàn diện</p>
           <p><i class="bi bi-geo-alt-fill me-2 text-primary"></i>12 Nguyễn Văn Bảo, Gò Vấp, TP.HCM</p>
-          <p><i class="bi bi-telephone-fill me-2 text-primary"></i>Hotline: <a href="tel:0101010101" class="text-decoration-none text-light">0101 010 101</a></p>
-          <p><i class="bi bi-envelope-fill me-2 text-primary"></i>Email: <a href="mailto:info@thietbimang.vn" class="text-decoration-none text-light">info@thietbimang.vn</a></p>
+          <p><i class="bi bi-telephone-fill me-2 text-primary"></i>Hotline: <a href="tel:0101010101"
+              class="text-decoration-none text-light">0101 010 101</a></p>
+          <p><i class="bi bi-envelope-fill me-2 text-primary"></i>Email: <a href="mailto:info@thietbimang.vn"
+              class="text-decoration-none text-light">info@thietbimang.vn</a></p>
         </div>
-  
+
 
         <div class="col-lg-3 col-md-6 mb-4">
           <h5 class="text-uppercase mb-4 fw-bold border-bottom pb-2 border-primary">Hỗ trợ khách hàng</h5>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i class="bi bi-chevron-right me-2"></i>Chính sách bảo hành</a></li>
-            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i class="bi bi-chevron-right me-2"></i>Hướng dẫn mua hàng</a></li>
-            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i class="bi bi-chevron-right me-2"></i>Kiểm tra đơn hàng</a></li>
-            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i class="bi bi-chevron-right me-2"></i>Hướng dẫn cài đặt</a></li>
-            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i class="bi bi-chevron-right me-2"></i>FAQ - Câu hỏi thường gặp</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i
+                  class="bi bi-chevron-right me-2"></i>Chính sách bảo hành</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i
+                  class="bi bi-chevron-right me-2"></i>Hướng dẫn mua hàng</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i
+                  class="bi bi-chevron-right me-2"></i>Kiểm tra đơn hàng</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i
+                  class="bi bi-chevron-right me-2"></i>Hướng dẫn cài đặt</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i
+                  class="bi bi-chevron-right me-2"></i>FAQ - Câu hỏi thường gặp</a></li>
           </ul>
         </div>
-  
+
         <div class="col-lg-3 col-md-6 mb-4">
           <h5 class="text-uppercase mb-4 fw-bold border-bottom pb-2 border-primary">Danh mục sản phẩm</h5>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i class="bi bi-router me-2"></i>Router & Modem</a></li>
-            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i class="bi bi-hdd-stack me-2"></i>Switch & Hub</a></li>
-            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i class="bi bi-wifi me-2"></i>Thiết bị WiFi</a></li>
-            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i class="bi bi-shield-lock me-2"></i>Thiết bị bảo mật</a></li>
-            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i class="bi bi-pc-display me-2"></i>Phụ kiện mạng</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i
+                  class="bi bi-router me-2"></i>Router & Modem</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i
+                  class="bi bi-hdd-stack me-2"></i>Switch & Hub</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i
+                  class="bi bi-wifi me-2"></i>Thiết bị WiFi</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i
+                  class="bi bi-shield-lock me-2"></i>Thiết bị bảo mật</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-light d-block py-1 hover-link"><i
+                  class="bi bi-pc-display me-2"></i>Phụ kiện mạng</a></li>
           </ul>
         </div>
-  
+
         <div class="col-lg-3 col-md-6 mb-4">
           <h5 class="text-uppercase mb-4 fw-bold border-bottom pb-2 border-primary">Kết nối với chúng tôi</h5>
           <div class="d-flex mb-4">
-            <a href="#" class="text-light me-3 fs-5 hover-link bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-light me-3 fs-5 hover-link bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-youtube"></i></a>
-            <a href="#" class="text-light me-3 fs-5 hover-link bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;"><i class="bi bi-instagram"></i></a>
+            <a href="#"
+              class="text-light me-3 fs-5 hover-link bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center"
+              style="width: 40px; height: 40px;"><i class="bi bi-facebook"></i></a>
+            <a href="#"
+              class="text-light me-3 fs-5 hover-link bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center"
+              style="width: 40px; height: 40px;"><i class="bi bi-youtube"></i></a>
+            <a href="#"
+              class="text-light me-3 fs-5 hover-link bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center"
+              style="width: 40px; height: 40px;"><i class="bi bi-instagram"></i></a>
           </div>
-          
+
           <h6 class="mb-3">Đăng ký nhận bản tin</h6>
           <form class="mb-3">
             <div class="input-group">
-              <input type="email" class="form-control bg-dark border-secondary text-light" placeholder="Email của bạn" aria-label="Email">
+              <input type="email" class="form-control bg-dark border-secondary text-light" placeholder="Email của bạn"
+                aria-label="Email">
               <button class="btn btn-primary" type="button"><i class="bi bi-send"></i></button>
             </div>
           </form>
-          
+
           <div class="d-flex align-items-center">
             <i class="bi bi-headset me-2 fs-4 text-primary"></i>
             <div>
@@ -448,24 +462,24 @@
           </div>
         </div>
       </div>
-  
+
       <hr class="my-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
-  
+
       <div class="row">
         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
           <p class="mb-0 small">&copy; 2025 <span class="text-primary">Thiết Bị Mạng</span>. Bảo lưu mọi quyền.</p>
         </div>
         <div class="col-md-6 text-center text-md-end">
-            <img src="../IMG/payment.png" alt="Phương thức thanh toán" class="img-fluid" style="height: 100px; width: 300px;">
+          <img src="../IMG/payment.png" alt="Phương thức thanh toán" class="img-fluid"
+            style="height: 100px; width: 300px;">
         </div>
       </div>
     </div>
   </footer>
-      
-    
 
-     <!-- Modal Hiển thị Chi Tiết Sản Phẩm -->
-    <div class="modal fade" id="productDetailModal" tabindex="-1" aria-labelledby="productDetailModalLabel" aria-hidden="true">
+
+  <div class="modal fade" id="productDetailModal" tabindex="-1" aria-labelledby="productDetailModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -474,21 +488,18 @@
         </div>
         <div class="modal-body">
           <div class="row">
-            <!-- Hình ảnh sản phẩm -->
             <div class="col-md-6">
               <img id="modal-product-image" src="" class="img-fluid" alt="Sản phẩm">
             </div>
-            <!-- Thông tin chi tiết sản phẩm -->
             <div class="col-md-6">
               <h5 id="modal-product-name">Tên sản phẩm</h5>
               <p id="modal-product-price" class="text-danger fs-4">Giá sản phẩm</p>
               <p id="modal-product-description">Mô tả sản phẩm</p>
-              <!-- Số lượng mua -->
+
               <div class="mb-3">
                 <label for="quantity" class="form-label">Số lượng:</label>
                 <input type="number" id="quantity" class="form-control" value="1" min="1">
               </div>
-              <!-- Nút Thêm vào Giỏ Hàng -->
               <button id="addToCartBtn" class="btn btn-primary">Thêm vào Giỏ Hàng</button>
             </div>
           </div>
@@ -496,6 +507,7 @@
       </div>
     </div>
   </div>
-  
+
 </body>
+
 </html>

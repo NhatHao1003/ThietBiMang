@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Header */
+header {
+    width: 100%;
+    position: relative;
+}
+
+.nav-fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.nav-1 {
+    height: 80px;
+    background-color: #353535;
+}
+
+.nav-2 {
+    height: 30px;
+    background-color: #dcd3d3;
+    border-bottom: 2px solid #353535;
+}
+
+@media (max-width: 768px) {
+    .nav-2 {
+        display: none !important;
+    }
+}
+
+#logo {
+    width: 100px;
+    height: 50px;
+}
+
+.menu ul li a {
+    color: white;
+    font-weight: bolder;
+}
+
+.nav-link:hover {
+    color: #1284c2;
+}
+
+.active {
+    color: #1284c2 !important;
+}
+
+/* Tìm kiếm */
+.search-box {
+    display: flex;
+    width: 20%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-input {
+    border: none;
+    flex: 1;
+    padding: 7px 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.search-button {
+    background-color: #1284c2;
+    border: none;
+    color: white;
+    padding: 0 1rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.page-title {
+    background-color: #1284c2;
+    color: white;
+    padding: 20px 0;
+    margin-top: 110px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.contact-info:hover {
+    transform: translateY(-5px);
+}
+
+.contact-form {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.form-control:focus {
+    border-color: #1284c2;
+    box-shadow: 0 0 0 0.25rem rgba(18, 132, 194, 0.25);
+}
+
+.btn-primary {
+    background-color: #1284c2;
+    border-color: #1284c2;
+}
+
+.btn-primary:hover {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(18, 132, 194, 0.1);
+    color: #1284c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.map-container {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.store-info {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.store-title {
+    color: #1284c2;
+    font-weight: bold;
+    border-bottom: 2px solid #1284c2;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.store-details {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #353535;
+    color: white;
+    min-height: 500px;
+}
+
+.hover-link {
+    transition: all 0.3s ease;
+}
+
+.hover-link:hover {
+    color: #0dcaf0 !important;
+    transform: translateX(5px);
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+.border-primary {
+    border-color: #0dcaf0 !important;
+}
